@@ -1,0 +1,13 @@
+package javastudy;
+
+public class javastudy_extend {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Student student = new Student("홍길동", 20, 175, 70, "20210111", 3, 4.0);
+		Student student2 = new Student("홍길동", 20, 175, 70, "20210111", 3, 4.0);
+		student.show();
+		student2.show();
+	}
+
+}
