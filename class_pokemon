@@ -1,0 +1,73 @@
+package javastudy;
+
+public class javastudy_pokemon {
+	private String name;
+	private int phyattack;
+	private int psyattack;
+	private int phydefence;
+	private int psydefence;
+	private int speed;
+	private int health;
+	public String getName() {
+		return name;
+	}
+	public void setName(String name) {
+		this.name = name;
+	}
+	public int getPhyattack() {
+		return phyattack;
+	}
+	public void setPhyattack(int phyattack) {
+		this.phyattack = phyattack;
+	}
+	public int getPsyattack() {
+		return psyattack;
+	}
+	public void setPsyattack(int psyattack) {
+		this.psyattack = psyattack;
+	}
+	public int getPhydefence() {
+		return phydefence;
+	}
+	public void setPhydefence(int phydefence) {
+		this.phydefence = phydefence;
+	}
+	public int getPsydefence() {
+		return psydefence;
+	}
+	public void setPsydefence(int psydefence) {
+		this.psydefence = psydefence;
+	}
+	public int getSpeed() {
+		return speed;
+	}
+	public void setSpeed(int speed) {
+		this.speed = speed;
+	}
+	public int getHealth() {
+		return health;
+	}
+	public void setHealth(int health) {
+		this.health = health;
+	}
+	public javastudy_pokemon(String name, int phyattack, int psyattack, int phydefence, int psydefence, int speed,
+			int health) {
+		super();
+		this.name = name;
+		this.phyattack = phyattack;
+		this.psyattack = psyattack;
+		this.phydefence = phydefence;
+		this.psydefence = psydefence;
+		this.speed = speed;
+		this.health = health;
+	}
+	
+	public void random() {
+		System.out.println("포켓몬 이름 :" + getName());
+		System.out.println("물공 :" + getPhyattack());
+		System.out.println("특공 :" + getPsyattack());
+		System.out.println("물방 :" + getPhydefence());
+		System.out.println("특방 :" + getPsydefence());
+		System.out.println("스피드 :" + getSpeed());
+	}
+}
