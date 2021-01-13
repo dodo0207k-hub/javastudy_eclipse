@@ -1,0 +1,21 @@
+package javastudy_2;
+
+import java.util.Scanner;
+
+public class main_random {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		Scanner x1 = new Scanner(System.in);
+		Scanner y1 = new Scanner(System.in);
+		System.out.print("범위를 설정하여 주십시오. : ");
+		int rx = x1.nextInt();
+		System.out.print("추출할 갯수를 설정하여 주십시오. : ");
+		int ry = y1.nextInt();
+		class_random kim = new class_random (rx, ry);
+		kim.set();
+
+	}
+
+}
