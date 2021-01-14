@@ -1,0 +1,44 @@
+package javastudy_3;
+
+import java.util.Scanner;
+
+public class akinator {
+	public static void main(String[] args) {
+		
+		String[] question = new String[6];
+		question[0] = "당신은 동물입니까?";
+		question[1] = "당신은 척추가 있습니까?";
+		question[2] = "당신은 정온동물입니끼?";
+		question[3] = "당신은 포유류입니까?";
+		question[4] = "당신은 어류입니까?";
+		question[5] = "당신은 양서류입니까?";
+		
+		String[] answer = new String[7];
+		answer[0] = "식물";
+		answer[1] = "조류";
+		answer[2] = "포유류";
+		answer[3] = "어류";
+		answer[4] = "양서류";
+		answer[5] = "파충류";
+		answer[6] = "무척추동물";
+		
+		System.out.println("게임을 시작하겠습니다. 다음중 한가지를 마음속으로 선택하여 주십시오.");
+		for(int i = 0; i < 7; i++) {
+			System.out.print(answer[i] + " ");
+		}
+		System.out.println();
+		
+		for(int i = 0; i < 6; i++) {
+			if(i < 5) {
+				System.out.println((i + 1) + "번째 질문입니다." + question[i]);
+			}
+			else {
+				System.out.println("마지막 질문입니다." + question[i]);
+			}
+			Scanner as =new Scanner(System.in);
+			int Y = as.nextInt();
+		}
+		
+	}
+	
+}
