@@ -1,0 +1,14 @@
+package javastudy;
+
+public class javastudy_main_node {
+
+	public static void main(String[] args) {
+		
+		javastudy_class_node one = new javastudy_class_node(10,20);
+		javastudy_class_node two = new javastudy_class_node(30,40);
+		javastudy_class_node result = one.getCenter(two);
+		System.out.println("x : " + result.getX() + ", y :" + result.getY());
+
+	}
+
+}
