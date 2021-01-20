@@ -1,0 +1,23 @@
+package java_input;
+
+import java.util.Scanner; //자바의 입력 라이브러리
+
+public class input {
+
+	public static void main(String[] args) {
+		// next()
+		Scanner input = new Scanner(System.in);// Scanner 변수명 = new Scanner(System.in)
+		int number;
+		String name;
+		String intro;
+		number = input.nextInt();// 변수명 = Scanner변수명.next{반환타입}(); int의 경우 nextInt();
+		System.out.println(number);
+		name = input.next();// next() 의 경우 화이트 스페이스 기준 한단어를 가져온다.
+		System.out.println(name);
+		input.nextLine();// 버퍼 비우기
+		intro = input.nextLine();// nextLine() 의 경우 큐에 남은 것들을 가져온다. 따라서 위의 경우 name을 입력하고 enter를 입력했기때문에 큐에 enter값이 남아있고 이것이 자동으로
+		// nextLine() 에 입력되게 된다. 그렇기 때문에 Scanner변수명.nextLine();을 해주어서 버퍼를 비워주는 과정이 필요하다.
+		System.out.println(intro);
+	}
+
+}
