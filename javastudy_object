@@ -1,0 +1,22 @@
+package objecttest;
+
+public class Class_Object {
+	//객체 만드는 형식.
+	//클래스명 변수명 = new 클래스명();
+	public void punch() {
+		System.out.println("펀치!");
+	}
+}
+
+
+package objecttest;
+
+public class Test_Main {
+
+	public static void main(String[] args) {
+		// 객체 = 클래스를 변수타입으로 바꾸는 작업
+		Class_Object reference = new Class_Object(); //객체 생성
+		reference.punch(); //객체의 메소드 사용
+	}
+
+}
